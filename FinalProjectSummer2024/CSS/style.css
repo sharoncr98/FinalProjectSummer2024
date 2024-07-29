@@ -1,10 +1,54 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    background-image: url("../images/8BitSpace.jpg");
+    margin: 0px;
 }
+header{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    color: #C8ACD6;
 
+}
+header > div {
+    flex-grow: 1;
+    height: 145px;
+    width: auto;
+}
+header > div > a > img{
+    width: auto;
+    height: 80%;
+}
+header > nav > menu {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    display: flex;
+    color: #C8ACD6;
+}
+header > nav > menu > li{
+    padding: 0 15px;
+    color: #C8ACD6;
+}
+.home-masthead{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.intro h2{
+    text-align: center;
+    font-size: 30px;
+    color: #C8ACD6
+}
+.intro p{
+    text-align: center;
+    font-size: 18px;
+    color: #E5CFF7;
+}
 a{
     text-decoration: none;
-    color: #333;
+    color: #fefefe;
 }
 
 ul{
@@ -14,3 +58,61 @@ ul{
 img{
     max-width: 100%;
 }
+.home-masthead{
+    color: #fefefe;
+}
+.intro{
+    color: #fefefe;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    color: #C8ACD6;
+    padding: 10px 0; /* Vertical padding */
+    text-align: center;
+    width: 100%;
+}
+h6{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.newsletter {
+    text-align: center;
+    margin-bottom: 10px; /* Space between newsletter and info section */
+}
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter input[type="email"] {
+    margin-bottom: 0px;
+    padding: 3px;
+    width: 350px; /* Adjust as needed */
+    background-color: #fefefe;
+}
+
+.newsletter input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #C8ACD6; /* Button background color */
+    border: none;
+    color: #fefefe; /* Button text color */
+    cursor: pointer;
+}
+.info {
+    text-align: center;
+    color: #C8ACD6;
+}
+.contact {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li{
+    margin-bottom: 10px;
+    color: #C8ACD6;
+}
+
