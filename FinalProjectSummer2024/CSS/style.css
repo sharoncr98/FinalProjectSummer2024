@@ -36,6 +36,7 @@ header > nav > menu > li{
     padding-bottom: 20px;
     font-size: 50px;
 }
+
 .intro h2{
     text-align: center;
     font-size: 30px;
@@ -60,6 +61,7 @@ img{
 }
 .home-masthead{
     color: #fefefe;
+
 }
 .intro{
     color: #fefefe;
@@ -115,4 +117,59 @@ h6{
     margin-bottom: 10px;
     color: #C8ACD6;
 }
-
+.story{
+    color: #fefefe;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 10px;
+}
+.why{
+    color: #D27685;
+    padding-bottom: 30px;
+}
+.original{
+    color: #F0EB8D;
+    padding-bottom: 30px;
+}
+.customer{
+    color: #FFA559;
+}
+.location{
+    color: #f8f8f8;
+    font-size: 25px;
+}
+.here{
+    color: #FFA559;
+}
+.is{
+    color: #D27685;
+}
+.our{
+    color: #C8ACD6;
+}
+.story{
+    color: #F0EB8D;
+}
+.contactus{
+    text-align: center;
+    font-size: 20px;
+    color: #F0EB8D;
+}
+.email{
+    margin-left: 70px;
+    font-size: 18px;
+    color: #C8ACD6;
+}
+.email > p{
+    font-size: 16px;
+    color: #F0EB8D;
+}
+.hours{
+    margin-left: 70px;
+    font-size: 15px;
+    color: #C8ACD6;
+}
+.hours > p{
+    font-size: 16px;
+    color: #F0EB8D;
+}
