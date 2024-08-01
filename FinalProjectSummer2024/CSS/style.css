@@ -173,3 +173,61 @@ h6{
     font-size: 16px;
     color: #F0EB8D;
 }
+
+h2{
+    color: #f8f8f8;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.products{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+.products > div > a{
+    background-color: #232323;
+    color: rebeccapurple;
+    border-radius: 3px;
+}
+.products > div > p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.grey{
+    color: grey;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+}
+.grey > h2{
+    color: grey;
+}
+
+.yellow{
+    color:yellow;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+}
+.yellow > h2{
+    color: yellow;
+}
+.black{
+    color: #fefefe;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+}
+/* Products images */
+.grey{
+    background: rebeccapurple url("../images/GameBoyClassicGrey/179305--nintendo-game-boy.jpg") no-repeat center right;
+    background-size: 150px 150px;
+}
+.yellow{
+    background: rebeccapurple url("../images/GameBoyClassicYellow/Yellow Game Boy.jpg") no-repeat center right;
+    background-size: 150px 150px;
+}
+.black{
+    background: rebeccapurple url("../images/GameBoyClassicBlack/Black Game Boy.jpg") no-repeat center right;
+    background-size: 150px 150px;
+}
+
+
