@@ -1,108 +1,244 @@
-body{
+/* Style for body*/
+body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url("../images/8BitSpace.jpg");
-    margin: 0px;
+    background-image: url("../IMG/8BitSpace.jpg");
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
-header{
+/* Style for header*/
+header {
+    /* Sharon*/
     display: flex;
     align-items: center;
     height: 150px;
     color: #C8ACD6;
-
+    /* Adalid*/
+    background-color:rebeccapurple;
+    color: #fff;
+    padding: 10px 0;
 }
+/* Sharon*/
 header > div {
     flex-grow: 1;
     height: 145px;
     width: auto;
+/*The logo img adjustment */
 }
 header > div > a > img{
     width: auto;
-    height: 80%;
+    height: 90%;
+    padding-top: 7px;
+    padding-left: 8px;
 }
+/*removing the list underline, moving it away from the right side of the screen */
 header > nav > menu {
     list-style: none;
     padding-left: 0px;
+    padding-right: 10px;
     margin: 0px;
     display: flex;
-    color: #C8ACD6;
 }
+/*adding spacing between the list items */
 header > nav > menu > li{
     padding: 0 15px;
-    color: #C8ACD6;
+    color: #fefefe;
 }
-.home-masthead{
+/*centering the h1 and giving it sizes and color */
+.home-hero{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 50px;
+    color: #fefefe;
 }
-
+/*h2 properties */
 .intro h2{
     text-align: center;
     font-size: 30px;
-    color: #C8ACD6
+    color: #F0EB8D;
 }
+/*intro properties */
 .intro p{
     text-align: center;
     font-size: 18px;
-    color: #E5CFF7;
+    color: #C8ACD6;
 }
+/*Removing the text decoration */
 a{
     text-decoration: none;
     color: #fefefe;
 }
-
+/*Removing the underline style from the list */
 ul{
     list-style: none;
 }
-
+/*setting the images width */
 img{
     max-width: 100%;
-}
-.home-masthead{
-    color: #fefefe;
-
 }
 .intro{
     color: #fefefe;
 }
-footer{
+/* Style for header container using flex*/
+header .container {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Responsive design*/
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+header h1 {
+    margin: 5px;
+    font-family: Elephant, sans-serif;
+    font-size: 40px;
+}
+/*Style for Game Boy*/
+section h2{
+    margin: 5px;
+    font-family: Jokerman, sans-serif;
+    font-size: 35px;
+    color: #C8ACD6;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/*Main section styling*/
+main {
+    padding: 20px 0;
+}
+.product1 {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/*responsive design*/
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/*Style for the products details img*/
+.product-details img{
+    width: 500px;
+    /*struggle with yellow game boy page fitting image*/
+    flex: 1 1 40%;
+    max-width: 100%;
+    height: 500px;
+}
+.product img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin-bottom: 20px;
+}
+.product-info {
+    flex: 1 1 50%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+}
+.variations {
+    margin-top: 20px;
+}
+.variation {
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+}
+.variation img {
+    width: 100px;
+    height: auto;
+    /*margin-right: 20px;*/
+    border-radius: 5px;
+}
+.variation:last-child {
+    border-bottom: none;
+}
+.variation h3 {
+    margin: 0 10px 10px;
+}
+.price {
+    font-weight: bold;
+    color: rebeccapurple;
+    font-size: 24px;
+    margin-top: 10px;
+}
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+/*aligned to the center, coloring and positioning */
+footer {
+    color: #fefefe;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
-    color: #C8ACD6;
-    padding: 10px 0; /* Vertical padding */
-    text-align: center;
+    padding: 10px 0;
     width: 100%;
 }
+footer .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/*h6 properties */
 h6{
     font-size: 28px;
     margin-bottom: 5px;
 }
+/* Space between newsletter and info section, aligned center */
 .newsletter {
     text-align: center;
-    margin-bottom: 10px; /* Space between newsletter and info section */
+    margin-bottom: 10px;
 }
+/*form is flex, and centered */
 .newsletter form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/*setting the email field properties */
 .newsletter input[type="email"] {
     margin-bottom: 0px;
     padding: 3px;
-    width: 350px; /* Adjust as needed */
+    width: 350px;
     background-color: #fefefe;
 }
-
+/*setting the submit input properties */
 .newsletter input[type="submit"] {
     padding: 10px 20px;
-    background-color: #C8ACD6; /* Button background color */
+    background-color: #C8ACD6;
     border: none;
-    color: #fefefe; /* Button text color */
+    color: #fefefe;
     cursor: pointer;
 }
+/*centered and color */
 .info {
     text-align: center;
     color: #C8ACD6;
@@ -112,7 +248,6 @@ h6{
     padding: 0;
     margin: 0;
 }
-
 .contact li{
     margin-bottom: 10px;
     color: #C8ACD6;
@@ -123,6 +258,8 @@ h6{
     font-size: 20px;
     margin: 10px 10px;
 }
+/*targeting each word to change its color and font size, did the same for the words: why, original, customer, location
+ ,here, is, our, story*/
 .why{
     color: #D27685;
     padding-bottom: 30px;
@@ -173,7 +310,7 @@ h6{
     font-size: 16px;
     color: #F0EB8D;
 }
-
+/*h2 properties */
 h2{
     color: #f8f8f8;
     font-size: 30px;
@@ -186,7 +323,7 @@ h2{
     text-align: left;
 }
 .products > div > a{
-    background-color: #232323;
+    background-color: #A9A9A9;
     color: rebeccapurple;
     border-radius: 3px;
 }
@@ -195,12 +332,12 @@ h2{
     margin-bottom: 20px;
 }
 .grey{
-    color: grey;
+    color: #A9A9A9;
     background-color: rebeccapurple;
     border-radius: 5px;
 }
 .grey > h2{
-    color: grey;
+    color: #A9A9A9;
 }
 
 .yellow{
@@ -218,16 +355,95 @@ h2{
 }
 /* Products images */
 .grey{
-    background: rebeccapurple url("../images/GameBoyClassicGrey/179305--nintendo-game-boy.jpg") no-repeat center right;
+    background: rebeccapurple url("../IMG/GameBoyClassicGrey/179305--nintendo-game-boy.jpg") no-repeat center right;
     background-size: 150px 150px;
 }
 .yellow{
-    background: rebeccapurple url("../images/GameBoyClassicYellow/Yellow Game Boy.jpg") no-repeat center right;
+    background: rebeccapurple url("../IMG/GameBoyClassicYellow/Yellow Game Boy.jpg") no-repeat center right;
     background-size: 150px 150px;
 }
 .black{
-    background: rebeccapurple url("../images/GameBoyClassicBlack/Black Game Boy.jpg") no-repeat center right;
+    background: rebeccapurple url("../IMG/GameBoyClassicBlack/Black Game Boy.jpg") no-repeat center right;
     background-size: 150px 150px;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    header h1 {
+        font-size: 32px;
+    }
 
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 10px 0 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .product-details {
+        flex-direction: column;
+    }
+
+    .product-details img {
+        width: 100%;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .variation {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .variation img {
+        width: 80px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header div a img{
+        width: auto;
+        height: auto;
+    }
+    nav ul li a {
+        font-size: 19px;
+    }
+
+    .product-info {
+        padding: 5px;
+    }
+
+    .variation img {
+        width: 60px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
