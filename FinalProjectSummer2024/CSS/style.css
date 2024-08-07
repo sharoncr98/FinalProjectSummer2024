@@ -8,22 +8,22 @@ body {
 }
 /* Style for header*/
 header {
-    /* Sharon*/
+
     display: flex;
     align-items: center;
     height: 150px;
     color: #C8ACD6;
-    /* Adalid*/
+
     background-color:rebeccapurple;
     color: #fff;
     padding: 10px 0;
 }
-/* Sharon*/
+/* header size adjustment*/
 header > div {
     flex-grow: 1;
     height: 145px;
     width: auto;
-/*The logo img adjustment */
+    /*The logo img adjustment */
 }
 header > div > a > img{
     width: auto;
@@ -43,6 +43,11 @@ header > nav > menu {
 header > nav > menu > li{
     padding: 0 15px;
     color: #fefefe;
+}
+/*Adding a hover effect with slightly tinted shade of purple */
+header > nav > menu > li:hover{
+    background-color: #5b2d89 ;
+    cursor: pointer;
 }
 /*centering the h1 and giving it sizes and color */
 .home-hero{
@@ -96,28 +101,14 @@ header h1 {
     font-family: Elephant, sans-serif;
     font-size: 40px;
 }
-/*Style for Game Boy*/
+/*Style for Game Boy three pages title */
 section h2{
     margin: 5px;
     font-family: Jokerman, sans-serif;
     font-size: 35px;
     color: #C8ACD6;
 }
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-nav ul li {
-    margin-left: 20px;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
+
 /*Main section styling*/
 main {
     padding: 20px 0;
@@ -127,7 +118,7 @@ main {
     margin: 0 auto;
     max-width: 1200px;
 }
-/*responsive design*/
+/*responsive design for product details size*/
 .product-details {
     display: flex;
     flex-wrap: wrap;
@@ -136,11 +127,11 @@ main {
 /*Style for the products details img*/
 .product-details img{
     width: 500px;
-    /*struggle with yellow game boy page fitting image*/
+    /*struggle with yellow game boy page fitting image responsive design*/
     flex: 1 1 40%;
     max-width: 100%;
     height: 500px;
-}
+} /*Style for the products variations details,  img, information and price*/
 .product img {
     width: 100%;
     max-width: 200px;
@@ -167,7 +158,6 @@ main {
 .variation img {
     width: 100px;
     height: auto;
-    /*margin-right: 20px;*/
     border-radius: 5px;
 }
 .variation:last-child {
@@ -181,7 +171,7 @@ main {
     color: rebeccapurple;
     font-size: 24px;
     margin-top: 10px;
-}
+}/*Button add to cart color and properties*/
 button {
     background-color: #333;
     color: #fff;
@@ -191,7 +181,7 @@ button {
     cursor: pointer;
     margin-top: 20px;
 }
-/*aligned to the center, coloring and positioning */
+/*footer aligned to the center, coloring and positioning */
 footer {
     color: #fefefe;
     text-align: center;
@@ -366,7 +356,7 @@ h2{
     background: rebeccapurple url("../IMG/GameBoyClassicBlack/Black Game Boy.jpg") no-repeat center right;
     background-size: 150px 150px;
 }
-/* Responsive Design */
+/* Responsive Design targeting elements in all pages with a max-width 768px */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -418,7 +408,7 @@ h2{
         padding: 15px;
     }
 }
-
+/* Responsive Design targeting elements in all pages with a max-width 480px */
 @media (max-width: 480px) {
     header h1 {
         font-size: 24px;
