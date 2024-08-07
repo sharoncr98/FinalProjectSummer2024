@@ -63,6 +63,14 @@ header > nav > menu > li:hover{
     font-size: 30px;
     color: #F0EB8D;
 }
+.video {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color:#28143d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
 /*intro properties */
 .intro p{
     text-align: center;
