@@ -1,10 +1,10 @@
+//Global Header, Head And Footer
 $(document).ready(function() {
     $(function () {
         $("#head").load("meta.html");
         $("#header").load("header.html");
         $("#footer").load("footer.html");
     });
-
 
 //click button event to trigger an alert
     $(document).ready(function () {
@@ -18,6 +18,7 @@ $(document).ready(function() {
             alert("You have joined the Newsletter");
         });
     });
+    //Hover effect in the shop page for first product
     $(document).ready(function () {
         $("#propage1").hover(
             function () {
@@ -32,6 +33,7 @@ $(document).ready(function() {
             }
         );
     });
+    //Hover effect in the shop page for second product
     $(document).ready(function () {
         $("#propage2").hover(
             function () {
@@ -46,6 +48,7 @@ $(document).ready(function() {
             }
         );
     });
+    //Hover effect in the shop page for third product
     $(document).ready(function () {
         $("#propage3").hover(
             function () {
